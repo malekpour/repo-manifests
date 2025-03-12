@@ -17,9 +17,10 @@
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
   
+  <project name="meta-arm" remote="yocto"/>
   <project name="meta-rockchip" remote="malekpour"/>
 
   <project name="yocto-friendlyelec" path="build/conf" remote="malekpour">
-    <linkfile dest="build/conf/local.conf" src="rockchip-rk3588-nanopc-t6-lts.conf" />
+    <linkfile dest="build/conf/local.conf" src="nanopc-t6-lts.conf" />
   </project>
 </manifest>
