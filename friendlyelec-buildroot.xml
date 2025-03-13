@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="origin"
-          fetch="."
+  <remote name="origin" 
+          fetch="https://github.com/friendlyarm"
           revision="refs/heads/master" />
 
   <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi6-v6.1.y" />
