@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/armbian/" name="armbian"/>
+
+  <project name="build" remote="armbian" path="." revision="v25.2.1"/>
+</manifest>
