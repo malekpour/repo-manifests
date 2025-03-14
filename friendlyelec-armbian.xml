@@ -2,5 +2,5 @@
 <manifest>
   <remote fetch="https://github.com/armbian/" name="armbian"/>
 
-  <project name="build" remote="armbian" path="." revision="v25.2.1"/>
+  <project name="build" remote="armbian" revision="refs/heads/main"/>
 </manifest>
