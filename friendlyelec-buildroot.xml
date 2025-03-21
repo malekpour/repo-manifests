@@ -2,18 +2,18 @@
 <manifest>
   <remote name="friendlyarm" fetch="https://github.com/friendlyarm" />
 
-  <project remote="friendlyarm" path="kernel" name="kernel-rockchip" revision="refs/heads/nanopi6-v6.1.y" />
-  <project remote="friendlyarm" path="u-boot" name="uboot-rockchip" revision="refs/heads/nanopi6-v2017.09" />
-  <project remote="friendlyarm" path="rkbin" name="rkbin" revision="refs/heads/nanopi6" />
+  <project remote="friendlyarm" depth="1" path="kernel" name="kernel-rockchip" revision="refs/heads/nanopi6-v6.1.y" />
+  <project remote="friendlyarm" depth="1" path="u-boot" name="uboot-rockchip" revision="refs/heads/nanopi6-v2017.09" />
+  <project remote="friendlyarm" depth="1" path="rkbin" name="rkbin" revision="refs/heads/nanopi6" />
 
-  <project remote="friendlyarm" path="buildroot" name="linuxsdk-rockchip-buildroot" revision="refs/heads/kernel-5.10" />
+  <project remote="friendlyarm" depth="1" path="buildroot" name="linuxsdk-rockchip-buildroot" revision="refs/heads/kernel-5.10" />
 
-  <project remote="friendlyarm" path="external" name="linuxsdk-rockchip-external" revision="refs/heads/kernel-5.10" />
-  <project remote="friendlyarm" path="external/mpp" name="mpp" revision="refs/heads/develop" />
+  <project remote="friendlyarm" depth="1" path="external" name="linuxsdk-rockchip-external" revision="refs/heads/kernel-5.10" />
+  <project remote="friendlyarm" depth="1" path="external/mpp" name="mpp" revision="refs/heads/develop" />
 
-  <project remote="friendlyarm" path="toolchain" name="prebuilts" revision="refs/heads/master" />
+  <project remote="friendlyarm" depth="1" path="toolchain" name="prebuilts" revision="refs/heads/master" />
 
-  <project remote="friendlyarm" path="device/friendlyelec" name="buildroot_device_friendlyelec" revision="refs/heads/kernel-5.10" >
+  <project remote="friendlyarm" depth="1" path="device/friendlyelec" name="buildroot_device_friendlyelec" revision="refs/heads/kernel-5.10" >
     <linkfile dest=".current" src="rk3588"/>
   </project>
 </manifest>
