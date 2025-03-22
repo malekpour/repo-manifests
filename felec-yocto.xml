@@ -18,7 +18,7 @@
   <project name="meta-openembedded" remote="oe" />
   <project name="meta-rockchip" remote="malekpour" />
 
-  <project name="yocto-felec" path="build/conf">
+  <project name="yocto-felec" remote="malekpour" path="build/conf">
     <linkfile dest="build/conf/local.conf" src="nanopc-t6-lts.conf" />
   </project>
 </manifest>
