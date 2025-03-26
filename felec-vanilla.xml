@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <default sync-c="true" sync-j="8" />
-  
-  <remote name="u-boot" fetch="https://github.com/u-boot" />
-  <remote name="rockchip" fetch="https://github.com/rockchip-linux" />
 
-  <project clone-depth="1" remote="rockchip" name="rkbin" path="external/rkbin" revision="refs/heads/master" />
-  <project clone-depth="1" remote="u-boot" name="u-boot" path="uboot" revision="refs/tags/v2025.04-rc5" />
+  <remote name="github" fetch="https://github.com" />
+
+  <project clone-depth="1" remote="github" name="rockchip-linux/rkbin" path="external/rkbin" revision="refs/heads/master" />
+  <project clone-depth="1" remote="github" name="friendlyarm/uboot-rockchip" path="uboot" revision="refs/heads/nanopi6-v2017.09" />
+  <project clone-depth="1" remote="github" name="friendlyarm/rkbin" path="rkbin" revision="refs/heads/nanopi6" />
+
+  <project clone-depth="1" remote="github" name="friendlyarm/sd-fuse_rk3588" path="scripts/sd-fuse" revision="refs/heads/kernel-6.1.y">
+    <linkfile dest="out" src="out"/>
+  </project>
+
+  <project clone-depth="1" remote="github" name="friendlyarm/buildroot_device_friendlyelec" path="device/friendlyelec" revision="refs/heads/kernel-5.10" >
+      <linkfile dest=".current" src="rk3588"/>
+  </project>
+
+  <project clone-depth="1" remote="github" name="malekpour/vanirock" path="build" revision="refs/heads/main" />
 </manifest>
