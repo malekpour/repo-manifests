@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="u-boot" fetch="https://github.com/u-boot" />
-  <remote name="rockchip" fetch="https://github.com/ockchip-linux" />
+  <default sync-c="true" sync-j="8" />
+  
+  <remote name="uboot" fetch="https://github.com/u-boot" />
+  <remote name="rockchip" fetch="https://github.com/rockchip-linux" />
 
-  <project remote="rockchip" name="rkbin" path="external/rkbin" revision="master" />
-
-  <project remote="u-boot" name="u-boot" path="uboot" revision="v2025.04-rc4" />
+  <project clone-depth="1" remote="rockchip" name="rkbin" path="external/rkbin" revision="refs/heads/master" />
+  <project clone-depth="1" remote="uboot" name="u-boot" path="uboot" revision="refs/tags/v2025.04-rc5" />
 </manifest>
