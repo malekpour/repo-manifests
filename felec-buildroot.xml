@@ -2,32 +2,10 @@
 <manifest>
   <default sync-c="true" sync-j="8" />
 
-  <remote name="friendlyarm" fetch="https://github.com/friendlyarm" />
-
-  <project remote="friendlyarm" clone-depth="1" path="kernel" name="kernel-rockchip" revision="refs/heads/nanopi6-v6.1.y" />
-  <project remote="friendlyarm" clone-depth="1" path="u-boot" name="uboot-rockchip" revision="refs/heads/nanopi6-v2017.09" />
-  <project remote="friendlyarm" path="rkbin" name="rkbin" revision="refs/heads/nanopi6" />
-
-  <project remote="friendlyarm" clone-depth="1" path="buildroot" name="linuxsdk-rockchip-buildroot" revision="refs/heads/kernel-5.10" />
-
-  <project remote="friendlyarm" clone-depth="1" path="external" name="linuxsdk-rockchip-external" revision="refs/heads/kernel-5.10" />
-  <project remote="friendlyarm" clone-depth="1" path="external/mpp" name="mpp" revision="refs/heads/develop" />
-  <project remote="friendlyarm" clone-depth="1" path="external/rknn-toolkit2" name="rknn-toolkit2" revision="refs/heads/master" />
-  <project remote="friendlyarm" clone-depth="1" path="external/rknpu2" name="rknpu2" revision="refs/heads/master" />
-
-  <project remote="friendlyarm" clone-depth="1" path="toolchain" name="prebuilts" revision="refs/heads/master" />
+  <remote name="github" fetch="https://github.com" />
+  <remote name="buildroot" fetch="https://gitlab.com/buildroot.org" />
   
-  <project remote="friendlyarm" clone-depth="1" path="device/rockchip" name="buildroot_device_rockchip" revision="refs/heads/kernel-5.10" />
+  <project clone-depth="1" remote="buildroot" name="buildroot" path=".buildroot" revision="refs/tags/2025.02" />
 
-  <project remote="friendlyarm" clone-depth="1" path="scripts/sd-fuse" name="sd-fuse_rk3588" revision="refs/heads/kernel-6.1.y">
-    <linkfile dest="out" src="out"/>
-  </project>  
-
-  <project remote="friendlyarm" clone-depth="1" path="device/friendlyelec" name="buildroot_device_friendlyelec" revision="refs/heads/kernel-5.10">
-    <linkfile dest=".current" src="rk3588"/>
-  </project>
-
-  <project remote="friendlyarm" clone-depth="1" path="scripts" name="buildroot_scripts" revision="refs/heads/kernel-5.10">
-    <linkfile dest="build.sh" src="build.sh"/>
-  </project>
+  <project clone-depth="1" remote="github" path="felec" name="malekpour/buildroot-felec" revision="refs/heads/master" /> 
 </manifest>
